@@ -93,3 +93,31 @@ input[type="text"],
 input[type="search"] {
   font-size: 16px; /* 防止 iOS 自动缩放 */
 }
+
+/* 移动端性能优化 */
+@media (max-width: 768px) {
+  /* 减少移动端动画时长，提升响应速度 */
+  * {
+    transition-duration: 150ms !important;
+  }
+
+  /* 优化移动端触摸滚动 */
+  .overflow-y-auto,
+  .overflow-auto {
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+  }
+
+  /* 减少模糊效果强度（提升低端设备性能） */
+  .backdrop-blur-xl {
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+  }
+
+  /* 优化按钮点击区域 */
+  button,
+  a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}

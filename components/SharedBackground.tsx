@@ -12,8 +12,10 @@ export const SharedBackground = memo(() => {
         <img
           src={backgroundUrl}
           alt="background"
-          className={`w-full h-full object-cover transition-opacity duration-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
+          className={`w-full h-full object-cover transition-opacity duration-700 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
           loading="eager"
+          fetchPriority="high"
+          decoding="async"
           onLoad={setLoaded}
         />
       )}

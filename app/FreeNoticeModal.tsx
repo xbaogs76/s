@@ -79,18 +79,18 @@ export const FreeNoticeModal = memo(() => {
 
   return (
     <div className="fixed inset-0 z-[9999] flex items-center justify-center p-3 sm:p-4">
-      <div 
-        className="absolute inset-0 bg-black/20 transition-opacity duration-300"
+      <div
+        className="absolute inset-0 bg-black/20 transition-opacity duration-200"
         style={{
-          animation: 'fadeIn 0.3s ease-out'
+          animation: 'fadeIn 0.2s ease-out'
         }}
       />
-      
-      <div 
+
+      <div
         className="relative w-full max-w-[360px] sm:max-w-sm bg-black/10 backdrop-blur-[6px] border border-white/30 rounded-[20px] sm:rounded-[24px] overflow-hidden shadow-2xl max-h-[90vh] sm:max-h-[85vh] flex flex-col"
-        style={{ 
-          animation: 'powerZoomIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards',
-          willChange: 'auto'
+        style={{
+          animation: 'powerZoomIn 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) forwards',
+          willChange: 'transform, opacity'
         }}
       >
         <div className="absolute inset-0 pointer-events-none">

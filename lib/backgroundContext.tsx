@@ -12,7 +12,7 @@ interface BackgroundContextType {
 const BackgroundContext = createContext<BackgroundContextType | undefined>(undefined);
 
 const BG_CACHE_KEY = 'app_background_cache';
-const BG_EXPIRE_TIME = 24 * 60 * 60 * 1000; // 24小时过期
+const BG_EXPIRE_TIME = 7 * 24 * 60 * 60 * 1000; // 7天过期（减少移动端流量消耗）
 
 interface BackgroundCache {
   url: string;

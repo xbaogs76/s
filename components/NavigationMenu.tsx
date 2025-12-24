@@ -45,7 +45,7 @@ export const NavigationMenu = memo(({ isOpen, onClose }: NavigationMenuProps) =>
   return (
     <div className="fixed inset-0 z-[100] flex items-start justify-end">
       <div
-        className="absolute inset-0 bg-black/50 transition-opacity duration-300 backdrop-blur-sm"
+        className="absolute inset-0 bg-black/50 transition-opacity duration-200 backdrop-blur-sm"
         onClick={onClose}
       />
 

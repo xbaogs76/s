@@ -38,6 +38,9 @@ export default function RootLayout({
         <meta name="theme-color" content="#1877F2" />
         <meta name="application-name" content="FB创号小助手" />
         <meta name="apple-mobile-web-app-title" content="FB创号小助手" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-touch-fullscreen" content="yes" />
         <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📱</text></svg>" />
       </head>
       <body className="antialiased">
